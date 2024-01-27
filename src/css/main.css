@@ -1,0 +1,504 @@
+:root {
+
+
+    /* Aplicação: Pode ser usado como cor de destaque para botões e links. Evoca uma sensação de frescor e energia. */
+    --btn-link: #7eddd3;
+    /* Aplicação: Excelente para destaques e chamadas à ação. Pode ser usado em botões ou em elementos que você deseja que se destaquem. */
+    --btn-destaque: #FFD166;
+    /* Aplicação: Ideal para detalhes sutis e destaques. Adiciona um toque suave e retro. */
+    --detalhes-sutis: #FF6B6B;
+    /* Aplicação: Pode ser utilizado como cor de fundo para cabeçalhos e rodapés. Oferece um contraste elegante com cores mais vivas. */
+    --fundo-header-footer: #303960;
+    /* Aplicação: Pode ser usado em elementos de destaque e para criar uma atmosfera refrescante. Ótimo para ícones e detalhes. */
+    --icon-detalhe: #82CCB4;
+    /* Aplicação: Funciona bem para realçar áreas específicas e trazer uma sensação calorosa. Pode ser usado em botões ou elementos de destaque. */
+    --btn-geral: #D9BF77;
+
+    /* textos */
+    --cabecalhos-Principais: #FFD166;
+    --cor-inicial: #ff8c00;
+    /* Laranja escuro */
+    --cor-final: #ff4500;
+    /* Laranja mais claro */
+
+}
+
+
+.regua {
+    border: 1px solid #FF6B6B;
+}
+
+
+header {
+    position: sticky;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    background-color: #fff;
+}
+
+
+/* Estilos gerais */
+body {
+    font-family: 'Poppins', sans-serif;
+
+}
+
+
+section {
+    /* height: 100vh; */
+    padding-top: 70px;
+}
+
+/* Estilos para a Seção Home */
+
+
+/* Estilos da logo redimenssionada*/
+.container>img {
+    width: 100px;
+}
+
+
+/* ------------- ESTILIZANDO O BOOTSTRAP COM CSS -------------*/
+.navbar-nav .nav-item .active {
+    background-color: var(--btn-destaque);
+}
+
+
+.nav-link {
+    text-align: center;
+}
+
+
+/* ------------- ESTILIZANDO IMG VINIL CARROCEL -------------*/
+
+.carousel-item img {
+    width: 400px;
+    height: 400px;
+}
+
+
+/* ------------- ESTILIZANDO MEU CARROCEL -------------*/
+
+.section-carousel {
+    max-width: 1320px;
+    width: 100%;
+    max-height: 100vh;
+    height: 100%;
+    margin: 0 auto;
+    /* background-color: #f4f1e1; Cor de fundo que complementa o estilo envelhecido */
+}
+
+.row {
+    align-items: center;
+    justify-content: space-between;
+    row-gap: 3rem;
+}
+
+/* ------------- ESTILIZANDO MEU MENU DE CONTROLE DO CARROCEL -------------*/
+
+/* alinhando as barras no centro da img */
+.carousel-indicators {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: -15rem;
+    z-index: 1;
+    display: block;
+    padding: 0;
+    margin-right: 15px;
+    margin-bottom: 1rem;
+    margin-left: 15px;
+}
+
+/* travando a seta esquerda sobre a img */
+.carousel-control-prev {
+    left: 0;
+}
+
+/* travando a seta diretia sobre a img */
+.carousel-control-next {
+    right: 260px;
+}
+
+/* alinhando ao centro o tudo */
+.carousel-inner {
+    text-align: center;
+}
+
+/* Ajustando a altura do carrocel */
+.carousel-item {
+    max-height: 400px;
+}
+
+/* ////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* ------------- ESTILIZANDO PAGINA DO CARD -------------*/
+
+/* Estilizando o titulo da pagina */
+#spleft {
+    color: rgba(126, 221, 211, 0.8);
+}
+
+#sprigth {
+    color: rgba(255, 69, 0, 0.8);
+}
+
+
+
+#id-sr-titulo,
+.txt-envelhecido {
+    font-size: 3em;
+    /* Tamanho da fonte */
+    font-family: 'Playfair Display', serif;
+    /* Uma fonte com uma aparência mais clássica */
+    color: #704214;
+    /* Cor do texto */
+    padding: 10px 20px;
+    /* Espaçamento interno */
+    border-radius: 8px;
+    /* Borda arredondada */
+    position: relative;
+    /* Necessário para adicionar os pseudo-elementos (::before e ::after) */
+
+}
+
+.titulo-envelhecido {
+    /* Tamanho da fonte */
+    font-size: 2em;
+    /* Uma fonte com uma aparência mais clássica */
+    font-family: 'Playfair Display', serif;
+    /* Cor do texto */
+    color: #704214;
+    /* Cor de fundo que complementa o estilo envelhecido */
+    background-color: #f4f1e1;
+    /* Espaçamento interno */
+    padding: 10px 20px;
+    /* Borda arredondada */
+    border-radius: 8px;
+    /* Necessário para adicionar os pseudo-elementos (::before e ::after) */
+    position: relative;
+
+    margin-top: 70px;
+
+
+}
+
+.titulo-envelhecido::before,
+.titulo-envelhecido::after {
+    content: "";
+    /* Conteúdo vazio para os pseudo-elementos */
+    position: absolute;
+    /* Posição absoluta em relação ao título */
+    width: 100%;
+    /* Largura total */
+    height: 1px;
+    /* Espessura da linha */
+    background-color: #704214;
+    /* Cor da linha */
+    top: 50%;
+    /* Posicionamento vertical no centro */
+    z-index: -1;
+    /* Coloca os pseudo-elementos atrás do texto */
+}
+
+.titulo-envelhecido::before {
+    left: 0;
+    /* Linha à esquerda do texto */
+}
+
+.titulo-envelhecido::after {
+    right: 0;
+    /* Linha à direita do texto */
+}
+
+
+
+/* ajustando Paragrafo */
+#font-p {
+    font-size: 18px;
+    /* Tamanho da fonte */
+    text-align: justify;
+}
+
+#font-h5 {
+    font-size: 5em;
+    /* Tamanho da fonte */
+}
+
+
+/* Estilos dos Cards */
+.card {
+    margin-bottom: 20px;
+    /* border: none; */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    /* box-shadow: 0 8px 16px rgba(255, 69, 0, 0.8), 0 4px 8px rgba(126, 221, 211, 0.8); */
+
+}
+
+
+/* Estilizando o controle de play */
+.audio-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+audio {
+    width: 100%;
+}
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+
+
+/* Estilos da Seção Sobre Nós */
+.sobre-nos {
+    padding: 20px;
+    background-color: #f8f9fa;
+}
+
+
+#img-sobre-nos {
+    width: 100%;
+}
+
+
+
+/* Estilos do Formulário de Contato */
+#form-chat {
+    max-width: 400px;
+    margin: 0 auto;
+    margin-bottom: 58px;
+}
+
+.form-group {
+    padding-block: 5px;
+}
+
+/* Estilos do Rodapé */
+footer {
+    text-align: center;
+    height: auto;
+    max-height: 100%;
+    margin-top: 10%;
+}
+
+
+
+
+footer p,
+footer small {
+    color: #303960;
+}
+
+
+
+/* Estilos específicos para telas até 640px */
+@media only screen and (max-width: 640px) {
+
+    /* trazendo o respiro lateral para estrutura */
+    .section-carousel {
+        max-width: 90%;
+        max-height: 100%;
+
+    }
+
+    /* ajustando a imagem do gramofone dentro da dimensão */
+    .col-md-6>img {
+        max-width: 100%;
+    }
+
+    /* ajustando a imagem dos Discos de vinil  */
+    .carousel-item>img {
+        max-width: 100%;
+        height: 50%;
+        margin-bottom: 20px;
+    }
+
+    /* alinhando a div */
+    .carousel-inner {
+        text-align: center;
+    }
+
+    /* colocando em visão de coluna */
+    .carousel-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+
+    /* Devolvendo o estado Origninal da seta direita do carrocel */
+    .carousel-control-next {
+        right: 0;
+    }
+
+    /* Devolvendo a posição originl da barra de contagem do Carrocel */
+    .carousel-indicators {
+        left: 0;
+    }
+
+    /* Removendo um espaçamento entre o Gramofone e o Vinil */
+    .row {
+        row-gap: 10px;
+    }
+
+    .row {
+        --bs-gutter-x: -2.8rem;
+    }
+
+    .txt-envelhecido {
+        font-size: 2em;
+        /* Tamanho da fonte */
+    }
+
+    .id-sr-titulo-aline-center {
+        text-align: center;
+        margin-top: 3rem;
+        margin-bottom: 3.5rem;
+    }
+
+    #font-h5 {
+        font-size: 4em;
+    }
+
+    #font-p {
+        font-size: 15px;
+        /* text-align: start;         */
+    }
+
+    footer {
+        font-size: 12px;
+    }
+    .card {
+        width: 100%;
+        /* Garante que o card ocupe toda a largura da coluna */
+    }
+
+    /* Adicionando espaçamento entre as colunas */
+    .col-md-3 {
+        width: 100%;
+        /* Faz com que cada coluna ocupe 40% da largura em telas maiores */
+        max-width: 100%;
+
+    }
+}
+
+
+
+
+
+/* Estilos específicos para telas maiores que 641px e menores que 1024px */
+@media only screen and (min-width: 641px)and (max-width: 1023px) {
+
+    /* trazendo o respiro lateral para estrutura */
+    .section-carousel {
+        max-width: 90%;
+        max-height: 100%;
+
+    }
+
+    /* ajustando a imagem do gramofone dentro da dimensão */
+    .col-md-6>img {
+        max-width: 100%;
+    }
+
+    /* ajustando a imagem dos Discos de vinil  */
+    .carousel-item>img {
+        max-width: 100%;
+        height: 50%;
+        margin-bottom: 20px;
+    }
+
+    /* alinhando a div */
+    .carousel-inner {
+        text-align: center;
+    }
+
+    /* colocando em visão de coluna */
+    .carousel-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+
+    /* Devolvendo o estado Origninal da seta direita do carrocel */
+    .carousel-control-next {
+        right: 0;
+    }
+
+    /* Devolvendo a posição originl da barra de contagem do Carrocel */
+    .carousel-indicators {
+        left: 0;
+    }
+
+    /* Removendo um espaçamento entre o Gramofone e o Vinil */
+    .row {
+
+        row-gap: 10px;
+    }
+
+    .row {
+        --bs-gutter-x: -2.8rem;
+    }
+
+    .txt-envelhecido {
+        font-size: 2em;
+        /* Tamanho da fonte */
+    }
+
+    .id-sr-titulo-aline-center {
+        text-align: center;
+        margin-top: 3rem;
+        margin-bottom: 3.5rem;
+    }
+
+    #font-h5 {
+        font-size: 4em;
+    }
+
+    #font-p {
+        font-size: 15px;
+        /* text-align: start;         */
+    }
+
+    footer {
+        font-size: 12px;
+    }
+
+    .rowTable {
+        /* display: flex; */
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: space-between;
+
+        margin-left: 0px;
+        margin-right: 43px;
+    }
+
+    .card {
+        width: 100%;
+        /* Garante que o card ocupe toda a largura da coluna */
+    }
+
+    /* Adicionando espaçamento entre as colunas */
+    .col-md-3 {
+        width: 40%;
+        /* Faz com que cada coluna ocupe 40% da largura em telas maiores */
+        max-width: 100%;
+
+    }
+
+}

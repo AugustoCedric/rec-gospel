@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./src/img/favicon/favicon-rec.ico" type="image/x-icon">
+
+    <!-- FontBootstrap -->
+    <link rel="stylesheet" href="./src/lib/bootstrap/bootstrap.min.css">
+
+    <!-- fontGoogle -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Playfair+Display+SC&family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Meu CSS -->
+    <link rel="stylesheet" href="./src/css/main.css">
+
+
+    <!-- Título -->
+    <title>REC-GOSPEL</title>
+
+</head>
+
+<body>
+
+    <header id="cabecalho">
+        <div class="navbar navbar-expand-lg ">
+            <div class="container ">
+                <img src="./src/img/logo.webp" alt="Logo da Rec-retro">
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav class="collapse navbar-collapse justify-content-end" id="menu">
+                    <ul class="nav navbar-nav nav-pills">
+                        <li class="nav-item"><a class="nav-link active" href="#id-home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#id-musica">Músicas</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#id-sobre-nos">Sobre nós</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#id-chat">Chat</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div data-bs-spy="scroll" data-bs-target="#cabecalho">
+        <section id="id-home" class="section-carousel">
+            <!-- Slider/Carrossel -->
+            <div id="carousel-nav" class="carousel carousel-fade slide" data-bs-ride="carousel">
+                <div class="row">
+                    <div class="col-md-6">
+                        <!-- Conteúdo dos slides aqui -->
+                        <img src="./src/img/gramofone-retro.png" alt="">
+                    </div>
+                    <div class="col-md-6">
+                        <div class="carousel-inner">
+                            <a href="#id-musica">
+                                <div data-bs-interval="3000" class="carousel-item active">
+                                    <!-- Conteúdo do primeiro slide -->
+                                    <img id="ft000" class="d-block w-90" src="./src/img/Vinil-fernandinho.png"
+                                        alt="Cantor Fernandinho">
+                                </div>
+                                <div class="carousel-item">
+                                    <!-- Conteúdo do segundo slide -->
+                                    <img id="ft001" class="d-block w-90" src="./src/img/Vinil-Diante-do-Trono.png"
+                                        alt="Banda diante do trono">
+                                </div>
+                                <div class="carousel-item">
+                                    <!-- Conteúdo do terceiro slide -->
+                                    <img id="ft002" class="d-block w-90" src="./src/img/Vinil-vanessa-rayanne.png"
+                                        alt="Cantora Vanessa Rayanne">
+                                </div>
+                                <div class="carousel-item">
+                                    <!-- Conteúdo do quarto slide -->
+                                    <img id="ft003" class="d-block w-90" src="./src/img/Vinil-Valesca Mayssa.png"
+                                        alt="Valesca Maisa">
+                                </div>
+                                <div class="carousel-item">
+                                    <!-- Conteúdo do quinto slide -->
+                                    <img id="ft004" class="d-block w-90" src="./src/img/Vinil-Ivonaldo-albuquerque.png"
+                                        alt="Ivonaldo Albuquerque">
+                                </div>
+                                <!-- Adicione mais slides conforme necessário -->
+                            </a>
+                            <button data-bs-target="#carousel-nav" data-bs-slide="prev" class="carousel-control-prev"
+                                type="button">
+                                <span class="carousel-control-prev-icon"></span>
+                            </button>
+                            <button data-bs-target="#carousel-nav" data-bs-slide="next" class="carousel-control-next"
+                                type="button">
+                                <span class="carousel-control-next-icon"></span>
+                            </button>
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carousel-nav" class="active"
+                                    data-bs-slide-to="0"></button>
+                                <button type="button" data-bs-target="#carousel-nav" data-bs-slide-to="1"></button>
+                                <button type="button" data-bs-target="#carousel-nav" data-bs-slide-to="2"></button>
+                                <button type="button" data-bs-target="#carousel-nav" data-bs-slide-to="3"></button>
+                                <button type="button" data-bs-target="#carousel-nav" data-bs-slide-to="4"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- Cards -->
+        <section id="id-musica" class="container mt-4">
+            <!-- Criação do estilo do titulo -->
+            <div class="id-sr-titulo-aline-center ">
+                <h1 id="id-sr-titulo" class="txt-envelhecido font-h5">Soun<strong>dR</strong>ound</h1>
+            </div>
+            <div class="row rowTable">
+                <div class="col-md-3 ">
+                    <!-- Conteúdo do primeiro card -->
+                    <div class="card" style="width: 19.5rem;">
+                        <img src="./src/img/capa-fernandinho.png" class="card-img-top" alt="Capa do Álbum">
+                        <div class="card-body">
+                            <h6 class="card-title"><strong>Música:</strong> Faz Chover</h6>
+                            <p class="card-text"><strong>Artista:</strong> Fernandinho</p>
+                            <p class="card-text"><strong>Álbum:</strong> Único</p>
+                            <audio controls>
+                                <source
+                                    src="./src/mp3/Faz Chover - Série Acústica Com Fernandinho Vol. III_scnBd3lAO0I.mp3"
+                                    type="audio/mp3">
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 ">
+                    <!-- Conteúdo do segundo card -->
+                    <div class="card" style="width: 19.5rem;">
+                        <img src="./src/img/capa-Valesca Mayssa.png" class="card-img-top" alt="Capa do Álbum">
+                        <div class="card-body">
+                            <h6 class="card-title"><strong>Música:</strong> Eis-me Aqui</h6>
+                            <p class="card-text"><strong>Artista:</strong> Valesca Mayssa</p>
+                            <p class="card-text"><strong>Álbum:</strong> Valesca Mayssa Ao Vivo</p>
+                            <audio controls>
+                                <source src="./src/mp3/Valesca Mayssa _ Eis-me Aqui [Vídeo Letra]_mW4psuVOuXs.mp3"
+                                    type="audio/mp3">
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 ">
+                    <!-- Conteúdo do terceiro card -->
+                    <div class="card" style="width: 19.5rem;">
+                        <img src="./src/img/capa-rayanne.png" class="card-img-top" alt="Capa do Álbum">
+                        <div class="card-body">
+                            <h6 class="card-title"><strong>Música:</strong> Eu Cuido</h6>
+                            <p class="card-text"><strong>Artista:</strong> Vanessa Rayanne</p>
+                            <p class="card-text"><strong>Álbum:</strong> Adoração</p>
+                            <audio controls>
+                                <source
+                                    src="./src/mp3/Rayanne Vanessa - EU CUIDO - (feat. Joanny Raylla) - Live Session Oficial_dG8-uvgMMSg.mp3"
+                                    type="audio/mp3">
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 ">
+                    <!-- Conteúdo do quarto card -->
+                    <div class="card" style="width: 19.5rem;">
+                        <img src="./src/img/capa-trono.jpg" class="card-img-top" alt="Capa do Álbum">
+                        <div class="card-body">
+                            <h6 class="card-title"><strong>Música:</strong> Me Ama</h6>
+                            <p class="card-text"><strong>Artista:</strong> Diante do Trono</p>
+                            <p class="card-text"><strong>Álbum:</strong> A canção do Amor</p>
+                            <audio controls>
+                                <source src="./src/mp3/Diante do Trono - Me Ama (Lyric)_-go3Gt5TdmE.mp3"
+                                    type="audio/mp3">
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 ">
+                    <!-- Conteúdo do quinto card -->
+                    <div class="card" style="width: 19.5rem;">
+                        <img src="./src/img/capa-cassiane.png" class="card-img-top" alt="Capa do Álbum">
+                        <div class="card-body">
+                            <h6 class="card-title"><strong>Música:</strong> Com Muito Louvor</h6>
+                            <p class="card-text"><strong>Artista:</strong> Cassiane</p>
+                            <p class="card-text"><strong>Álbum:</strong> Com Muito Louvor</p>
+                            <audio controls>
+                                <source src="./src/mp3/Cassiane _ Com Muito Louvor (Ao Vivo)_440SucDfC2Y.mp3"
+                                    type="audio/mp3">
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 ">
+                    <!-- Conteúdo do sexto card -->
+                    <div class="card" style="width: 19.5rem;">
+                        <img src="./src/img/capa-fabiana.png" class="card-img-top" alt="Capa do Álbum">
+                        <div class="card-body">
+                            <h6 class="card-title"><strong>Música:</strong> Adorarei</h6>
+                            <p class="card-text"><strong>Artista:</strong> Fabiana Anastácio</p>
+                            <p class="card-text"><strong>Álbum:</strong> Adoração para Deus</p>
+                            <audio controls>
+                                <source src="./src/mp3/Fabiana Anastácio _ Adorarei (Vídeo Oficial)_t05tO0OrJV8.mp3"
+                                    type="audio/mp3">
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 ">
+                    <!-- Conteúdo do setimo card -->
+                    <div class="card" style="width: 19.5rem;">
+                        <img src="./src/img/capa-lauriete.png" class="card-img-top" alt="Capa do Álbum">
+                        <div class="card-body">
+                            <h6 class="card-title"><strong>Música:</strong> Gideão</h6>
+                            <p class="card-text"><strong>Artista:</strong> Lauriete</p>
+                            <p class="card-text"><strong>Álbum:</strong> O Segredo é Louvar</p>
+                            <audio controls>
+                                <source src="./src/mp3/Lauriete _ É Só Trezentos _ Clipe Oficial_PeTAfssvMIs.mp3"
+                                    type="audio/mp3">
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 ">
+                    <!-- Conteúdo do oitavo card -->
+                    <div class="card" style="width: 19.5rem;">
+                        <img src="./src/img/capa-luma Elpidio.png" class="card-img-top" alt="Capa do Álbum">
+                        <div class="card-body">
+                            <h6 class="card-title"><strong>Música:</strong> Que Amor É Esse</h6>
+                            <p class="card-text"><strong>Artista:</strong> Luma Elpidio</p>
+                            <p class="card-text"><strong>Álbum:</strong> Que Amor É Esse</p>
+                            <audio controls>
+                                <source src="./src/mp3/Que Amor É Esse - Luma Elpidio (Video Oficial)_xu8Zel1u-6k.mp3"
+                                    type="audio/mp3">
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sobre Nós -->
+        <section id="id-sobre-nos" class="container mt-4 titulo-envelhecido">
+            <!-- Criação do estilo do titulo -->
+            <h1 class="titulo-envelhecido txt-envelhecido">Sobre Nós</h1>
+            <!-- Conteúdo da seção Sobre Nós -->
+            <div class="row" >
+                <!-- adicionan o texto na primeira coluna -->
+                <div class="col-md-6">
+                    <h5 id="font-h5">1982</h5>
+                    <p id="font-p">A <strong>REC Gospel</strong> é uma loja dedicada a fornecer uma variedade
+                        cuidadosamente
+                        selecionada
+                        de produtos gospel, desde músicas e livros até artigos de decoração inspiradores. Nosso
+                        compromisso é proporcionar uma experiência de compra única, conectando clientes a
+                        conteúdos que inspiram e fortalecem a fé.</p>
+                    <p id="font-p">Com uma equipe apaixonada por música gospel e cultura cristã, buscamos promover
+                        valores
+                        positivos e
+                        edificantes. Na <strong>REC Gospel</strong>, acreditamos no poder transformador da música e da
+                        palavra de Deus, e nos esforçamos para compartilhar essa mensagem por meio de nossos produtos.
+                        Seja
+                        bem-vindo à nossa comunidade!</p>
+                </div>
+                <!-- adicionando na segunda coluna uma imagem -->
+                <div class="col-md-6">
+                    <img id="img-sobre-nos" src="./src/img/sb-2.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <!-- Formulário de Contato -->
+        <section id="id-chat" class="container mt-4 ">
+            <!-- Conteúdo do formulário de contato -->
+            <h1 class="txt-envelhecido id-sr-titulo-aline-center">Entre em Contato</h1>
+            <div class="container mt-5" id="form-chat">
+                <form action="#" method="post" class="mx-auto " style="max-width: 500px;">
+
+                    <!-- Nome -->
+                    <div class="form-group">
+                        <input type="text" class="form-control form-control-sm" placeholder="Nome" required>
+                    </div>
+
+                    <!-- E-mail -->
+                    <div class="form-group ">
+                        <input type="email" class="form-control form-control-sm" placeholder="E-mail" required>
+                    </div>
+
+                    <!-- Mensagem -->
+                    <div class="form-group">
+                        <textarea class="form-control form-control-sm" placeholder="Mensagem" rows="10"
+                            style="resize: none;" required></textarea>
+                    </div>
+                    <!-- Botão de Envio -->
+                    <button type="submit" class="btn btn-success btn-block btn-sm float-end">Enviar</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Rodapé -->
+        <footer class="text-light text-center py-3">
+            <!-- Conteúdo do rodapé -->
+            <p>&copy; REC GOSPEL - Todos os direitos reservados - 2024. </p>
+            <small>Desenvolvido por AUGUSTO CEDRIC</small>
+
+        </footer>
+    </div>
+
+    <!-- FontBootstrap JS -->
+    <script src="./src/lib/bootstrap/bootstrap.bundle.min.js"></script>
+
+    <!-- Meu JS -->
+    <script src="./src/js/main.js"></script>
+</body>
+
+</html>
